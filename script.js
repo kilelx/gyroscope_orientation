@@ -3,6 +3,8 @@ const body = document.body;
 let maxWidth = window.innerWidth;
 const h1 = document.querySelector("h1");
 
+changeEventListener(maxWidth);
+
 window.addEventListener("resize", () => {
   maxWidth = window.innerWidth;
   changeEventListener(maxWidth);

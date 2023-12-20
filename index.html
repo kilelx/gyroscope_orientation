@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #0C0C0C;
+            color: #CEA07E;
+            /*   font-size: calc(10000vw/1500) */
+            font-size: 3vw;
+        }
+
+        h1 {
+            will-change: font-variation-settings;
+            font-variation-settings: "wght" 500;
+            font-size: 60px;
+        }
+
+        div {
+            display: flex;
+            width: 90vw;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="requestDeviceOrientation()">Permission</button>
+    <div>
+        <p>Hey,</p>
+        <h1>Welcome</h1>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -56,7 +56,9 @@ function handleOrientation(e) {
   //   }
   // }
 
-async activateGyro() {
+document.addEventListener("click", async() => {await activateGyro()})
+
+async function activateGyro() {
   return new Promise((resolve, reject) => {
     if(typeof DeviceOrientationEvent != undefined && typeof DeviceOrientationEvent.requestPermission === 'function') {
 
@@ -64,14 +66,12 @@ async activateGyro() {
       DeviceOrientationEvent.requestPermission()
         .then(res => {
           if(res === "granted") {
-            window.addEventListener("deviceorientation", handleOrientation(e))
+            window.addEventListener("deviceorientation", handleOrientation)
           }
 
           resolve();
         })
         .catch(reject)
-    }
+    } else resolve()
   })
 }
-
-document.addEventListener("click", async() => {await activateGyro()})

@@ -19,7 +19,7 @@ function changeEventListener(maxWidth) {
 }
 
 
-function handleMouseMove(clientX) {
+function handlePointerMove(clientX) {
   // Get the percentage on X of the mouse
   let xPercentage = (clientX * 100) / maxWidth;
   // Produit en croix, and add +100 to get a range between 100 and 900

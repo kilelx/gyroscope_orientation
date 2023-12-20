@@ -1,1 +1,1 @@
-[View live demo](httms://kilelx.github.io/gyroscope_orientation)
+[View live demo](https://kilelx.github.io/gyroscope_orientation)
